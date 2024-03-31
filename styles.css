@@ -139,6 +139,10 @@ h2{
     position: relative;
 }
 
+.bigger-image img {
+    height: 190px; 
+}
+
 .overlay {
     position: absolute;
     top: 50%;
@@ -147,8 +151,8 @@ h2{
     width: 80%;
     padding: 20px;
     box-sizing: border-box;
-    text-align: center;
-    opacity: 1; 
+    text-align: left;
+    opacity: 1;
     margin-top: 140px;
 }
 
@@ -157,75 +161,33 @@ h2{
 .overlay a {
     margin: 0;
     color: white;
+    text-align: left;
 }
 
-.image-grid {
-    --gap: 16px;
-    --num-cols: 4;
-    --row-height: 300px;
-
-    box-sizing: border-box;
-    padding: 16px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-}
-
-.image-grid>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.image-grid-col-2 {
-    grid-column: span 2;
-}
-
-.image-grid-row-2 {
-    grid-row: span 2;
-}
-
-.image-container:nth-child(1) {
-    grid-row: span 4; 
-    grid-column: span 2;
-}
-
-.image-container:nth-child(2),
-.image-container:nth-child(3),
-.image-container:nth-child(4),
-.image-container:nth-child(5) {
-    grid-row: span 2;
-    grid-column: span 1;
-}
-
-
-.overlay h2{
+.overlay h2 {
     font-size: 37px;
     font-weight: 600;
-    text-align: left;
-    margin-left: -80px;
-    width: 5000px;
+    width: auto;
 }
-.overlay p{
-    text-align: left;
-    margin-left: -67px;
+
+.overlay p {
     font-size: 20px;
     margin-bottom: 20px;
     color: #f1f0f0;
     font-weight: lighter;
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
-.overlay a{
+
+.overlay a {
     text-decoration: none;
-    text-align: left;
-    margin-left: -639px;
     font-size: 23px;
     border-left: 4px solid #E91901;
     padding-left: 10px;
     color: #D3D3D3;
-  
 }
-.overlay-primary, .overlay-secondary{
+
+.overlay-primary,
+.overlay-secondary {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -233,38 +195,30 @@ h2{
     width: 80%;
     padding: 20px;
     box-sizing: border-box;
-    text-align: center;
-    opacity: 1; 
-   
+    text-align: left;
+    opacity: 1;
 }
-.overlay-primary{
-    margin-top: 58px;
-}
-.overlay-secondary{
-    margin-top: 70px;
-}
-.overlay-primary h2{
+
+.overlay-primary h2,
+.overlay-secondary h2 {
     font-size: 22px;
     font-weight: 600;
-    text-align: left;
-    margin-left: -50px;
-    color: rgb(247, 247, 247);
-}
-.overlay-secondary h2{
-    font-size: 22px;
-    font-weight: 600;
-    text-align: left;
-    margin-left: -60px;
     color: rgb(247, 247, 247);
 }
 
-.overlay-primary a, .overlay-secondary a{
+.overlay-primary a,
+.overlay-secondary a {
     text-decoration: none;
-    text-align: left;
-    margin-left: -288px;
     font-size: 20px;
     padding-left: 10px;
     color: #D3D3D3;
+}
+
+.overlay a:hover,
+.overlay-primary a:hover,
+.overlay-secondary a:hover {
+    text-decoration: underline;
+    color: white;
 }
 
 .overlay-primary .primary-link-top{
@@ -280,11 +234,7 @@ h2{
     border-left: 4px solid #372E67;
 }
 
-.overlay a:hover ,.overlay-primary a:hover, .overlay-secondary a:hover{
-    text-decoration: underline;
-    color: white;
-    }
-    
+
 
 /*--------- SECTION NEWS------------- */
 
